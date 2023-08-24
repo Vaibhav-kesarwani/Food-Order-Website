@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food website</title>
+
+    <!-- adding favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- style link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Lato font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!--! navbar -->
+      <nav class="navbar">
+        <!-- logo -->
+        <img src="./assets/logo.png" class="logo" alt="logo" />
+
+        <!-- menu -->
+        <ul class="link-container">
+          <li class="link-items"><a href="#" class="links">Menu</a></li>
+          <li class="link-items"><a href="#" class="links">Order</a></li>
+          <li class="link-items"><a href="#" class="links">Resturants</a></li>
+          <li class="link-items"><a href="#" class="links">Track Order</a></li>
+        </ul>
+
+        <div class="nav-extras">
+          <!-- search box -->
+          <div class="search">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search Resturants, Cuisine...."
+            />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <!-- cart btn -->
+          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </nav>
+
+      <!--! hero section -->
+      <main id="hero-section">
+        <!-- hero content -->
+        <div class="hero-content">
+          <h1 class="hero-heading">Eat the best</h1>
+          <p class="hero-line">
+            Explore and udertand the culture more by tasting the amazing dishes
+            of that culture
+          </p>
+
+          <div class="search location">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search Resturants, Cuisine...."
+            />
+            <button class="search-btn locate-btn">
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+          </div>
+
+          <div class="hero-action-btn-container">
+            <button class="btn">Order Food</button>
+            <p class="or">or</p>
+            <button class="btn transparent">Make reservation</button>
+          </div>
+        </div>
+
+        <!-- hero image container -->
+        <div class="hero-img-container">
+          <div class="background-ele">
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+          </div>
+
+          <div class="forground-elements">
+            <img src="./assets/hero-biryani.png" class="hero-img" alt="" />
+            <img src="./assets/hero-burger.png" class="hero-img" alt="" />
+            <img src="./assets/hero-pizza.png" class="hero-img" alt="" />
+
+            <div class="review-box">
+              <div class="reviewer-info">
+                <img src="./assets/user-1.png" class="reviewer-img" alt="" />
+
+                <div class="reviewer">
+                  <div class="reviewer-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h2 class="reviewer-name">Vaibhav</h2>
+                </div>
+              </div>
+              <div class="review-body">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="review">
+                  The resturant was good. Staff was very welcoming and the
+                  food... well no words for it. Chef was amazing and the view of
+                  sky from the top deck was fabulous.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </header>
+  </body>
+</html>
