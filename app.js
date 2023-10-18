@@ -46,3 +46,5 @@ setInterval(() => {
   rotationVal += 120;
   dishSlider.style.transform = `translateY(-50%) rotate(${rotationVal}deg)`;
 }, 3000);
+
+AOS.init();

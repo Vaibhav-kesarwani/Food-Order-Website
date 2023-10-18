@@ -226,6 +226,10 @@ body {
   position: absolute;
 }
 
+[data-aos="fade-in"].aos-animate {
+  transform: none !important;
+}
+
 .ellipse {
   position: absolute;
   height: 100%;
