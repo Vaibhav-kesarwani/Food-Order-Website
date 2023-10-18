@@ -1,37 +1,48 @@
 // about us review wrapper slider
 
-let reviews = document.querySelectorAll('.review-wrapper');
+let reviews = document.querySelectorAll(".review-wrapper");
 
 let currentReviews = [0, 2];
 
 let updateReviewSlider = (cards) => {
-    cards.forEach((card_index) => {
-        reviews[card_index].classList.add('active');
-    })
-}
+  cards.forEach((card_index) => {
+    reviews[card_index].classList.add("active");
+  });
+};
 
 setInterval(() => {
-    currentReviews.forEach((card_index, i) => {
-        reviews[card_index].classList.remove('active');
+  currentReviews.forEach((card_index, i) => {
+    reviews[card_index].classList.remove("active");
 
-        currentReviews[i] = card_index >= reviews.length - 1 ? 0 : card_index + 1;
-    })
+    currentReviews[i] = card_index >= reviews.length - 1 ? 0 : card_index + 1;
+  });
 
-    setTimeout(() => {
-        updateReviewSlider(currentReviews);
-    }, 250)
-}, 5000)
+  setTimeout(() => {
+    updateReviewSlider(currentReviews);
+  }, 250);
+}, 5000);
 
 updateReviewSlider(currentReviews);
 
 // FAQ
 
-let faqs = [...document.querySelectorAll('.faq')];
+let faqs = [...document.querySelectorAll(".faq")];
 
-faqs.map(faq => {
-    let ques = faq.querySelector(".question-box");
+faqs.map((faq) => {
+  let ques = faq.querySelector(".question-box");
 
-    ques.addEventListener("click", () => {
-        faq.classList.toggle("active");
-    })
-})
+  ques.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
+});
+
+// Dis-slider
+
+let dishSlider = document.querySelector(".dish-slider");
+
+let rotationVal = 0;
+
+setInterval(() => {
+  rotationVal += 120;
+  dishSlider.style.transform = `translateY(-50%) rotate(${rotationVal}deg)`;
+}, 3000);

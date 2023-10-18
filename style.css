@@ -32,8 +32,8 @@
 }
 
 html {
-  overflow-x: hidden;
   font-size: 16px;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -829,7 +829,7 @@ section {
 }
 
 .pulse {
-  width: 100%;  
+  width: 100%;
   height: 100%;
   position: absolute;
 }
@@ -848,7 +848,7 @@ section {
 
 .pulse .circle:nth-child(2) {
   transform: translate(-50%, -50%) scale(1);
-  border: .2rem solid var(--accent-color);
+  border: 0.2rem solid var(--accent-color);
   background: transparent;
 }
 
@@ -876,4 +876,75 @@ section {
   transform: translateX(-50%) scale(1.1) rotate(5deg);
   box-shadow: 0 2.5rem 6.25rem var(--phone-app-shadow);
   border-radius: 2rem;
+}
+
+.discount-banner {
+  position: relative;
+  display: flex;
+  margin: 0 10vw 5rem;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  background-image: var(--discount-banner-background-overlay),
+    url(assets/discount.png);
+  background-size: cover;
+  color: var(--light-text-color);
+  overflow: hidden;
+}
+
+.discount-banner .section-detail {
+  margin-left: 0;
+  width: 50%;
+}
+
+.discount-banner .section-title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.discount-banner .section-info {
+  font-weight: 700;
+}
+
+.discount-code {
+  color: var(--secondary-text-color);
+  padding: 1rem 2rem;
+  background: var(--primary-color);
+  border-radius: 0.25rem;
+  width: fit-content;
+}
+
+.dish-slider {
+  position: absolute;
+  top: 50%;
+  right: -17.5rem;
+  transform: translateY(-50%);
+  width: 35rem;
+  height: 35rem;
+  border-radius: 100%;
+  transform-origin: center;
+  transition: 0.75s ease-in-out;
+}
+
+.dish-slider img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.dish-slider img:nth-child(1) {
+  top: 50%;
+  left: -7.5rem;
+}
+
+.dish-slider img:nth-child(2) {
+  top: 10%;
+  right: 2rem;
+}
+
+.dish-slider img:nth-child(3) {
+  top: 90%;
+  right: 2rem;
 }
